@@ -1,0 +1,71 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #1d2b64, #f8cdda); /* azul moderno */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.global {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    width: 350px;
+}
+
+.formulario label {
+    display: block;
+    color: #fff;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.formulario input[type="text"],
+.formulario input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    font-size: 14px;
+}
+
+.formulario input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #4a90e2;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formulario input[type="submit"]:hover {
+    background-color: #357ABD;
+}
+
+/* Links extras, se quiser adicionar */
+.formulario a {
+    color: #ccc;
+    font-size: 13px;
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    text-decoration: none;
+}
+
+.formulario a:hover {
+    text-decoration: underline;
+}
