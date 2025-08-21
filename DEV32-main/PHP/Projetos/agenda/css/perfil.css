@@ -1,0 +1,106 @@
+/* PERFIL.CSS MODERNO */
+
+/* BODY */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #121212;
+    color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* CONTAINER PRINCIPAL */
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    background-color: #1f1f1f;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+}
+
+/* TÍTULO */
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    color: #f0e6ec;
+    border-bottom: 2px solid #444;
+    padding-bottom: 12px;
+    text-shadow: 1px 1px 2px #000;
+}
+
+/* FORMULÁRIO */
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+/* LABELS */
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    color: #dcdcdc;
+    font-size: 0.95rem;
+}
+
+/* INPUTS */
+input[type="text"],
+input[type="date"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #555;
+    border-radius: 10px;
+    background-color: #2a2a2a;
+    color: #f5f5f5;
+    font-size: 0.95rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="password"]:focus {
+    border-color: #1db954;
+    box-shadow: 0 0 8px rgba(29, 185, 84, 0.5);
+    outline: none;
+}
+
+input[readonly] {
+    background-color: #333;
+    color: #aaa;
+}
+
+/* BOTÕES */
+button, input[type="submit"] {
+    grid-column: span 2;
+    padding: 14px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #1db954, #17a74d);
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+button:hover, input[type="submit"]:hover {
+    transform: translateY(-2px) scale(1.02);
+    background: linear-gradient(135deg, #17a74d, #13863b);
+    box-shadow: 0 6px 15px rgba(29, 185, 84, 0.5);
+}
+
+/* RESPONSIVIDADE */
+@media screen and (max-width: 700px) {
+    form {
+        grid-template-columns: 1fr;
+    }
+
+    button, input[type="submit"] {
+        grid-column: span 1;
+    }
+}

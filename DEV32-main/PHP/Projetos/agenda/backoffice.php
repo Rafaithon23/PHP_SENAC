@@ -39,6 +39,12 @@ else{
             <!-- AQUI VAI TRAZER O NOME DO USUARIO LOGADO -->
             <h1>BEM VINDO <?php echo strtoupper($nomeusuario)?> </h1>
 
+            <!-- BOTÃO DE ENTRADA DO -->
+            <div class="logout" method='post'>
+                <a href='areacliente/catalogo.php'><img src='icons/shopping2.png'width=50 height=50></a>
+            </div>
+        </div>
+
             <!-- BOTÃO DE ENCERRAMENTO DE SESSÃO -->
             <div class="logout" method='post'>
                 <a href='logout.php'><img src='icons/backspace.png'width=50 height=50></a>

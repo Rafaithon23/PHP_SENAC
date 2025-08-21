@@ -51,7 +51,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         <div class='tabela'>
             <!-- BOTÃO VOLTAR -->
             <a href="backoffice.php"><img src='icons/arrow47.png' width=50 height=50></a>
-            <h1>LISTA DE CLIENTES</h1>
+            <h1>LISTA DE SERVIÇOS</h1>
              <!-- CRIAÇÃO DE FILTRO DE TABLE -->
              <form action='servico_lista.php' method='post'>
                 <div class='filtro'>

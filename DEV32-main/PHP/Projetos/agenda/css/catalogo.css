@@ -22,10 +22,10 @@ body{
 .formulario{
     height: auto;
     margin-top: 20px;
-    background-color: #5d1c34;
+    background-color: #2e2e2e;
     width: 90%;
     border-radius: 20px;
-    border: #B17871 solid 2px;
+    border: #007c4d solid 2px;
 }
 
 .login{
@@ -50,13 +50,13 @@ textarea,
 input[type='decimal']{
     height: 40px;
     border-radius: 10px;
-    border: solid 2px #B17871	;
+    border: solid 2px #007c4d	;
     background-color: #FFF	;
     color: rgb(101, 101, 101);
 }
 
 .login input[type='submit']{
-    background-color: #D08A98	;
+    background-color: #007c4d	;
     border-radius: 20px;
     font-family: 'Courier New', Courier, monospace;
     color: aliceblue;
@@ -65,7 +65,7 @@ input[type='decimal']{
 }
 
 .login input[type='submit']:hover {
-    background-color: #B17871;
+    background-color: #007c4d;
     border-radius: 20px;
     font-family: 'Courier New', Courier, monospace;
     color: rgb(28, 29, 30);
@@ -90,10 +90,10 @@ input[type='decimal']{
 .imagem{
     height: auto;
     margin-top: 20px;
-    background-color: #5d1c34;
+    background-color: #00ff99;
     width: 90%;
     border-radius: 20px;
-    border: #B17871 solid 2px;
+    border: #007c4d solid 2px;
     display: flex;
     justify-content: center;
     align-items: center;

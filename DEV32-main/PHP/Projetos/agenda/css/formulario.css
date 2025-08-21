@@ -1,89 +1,129 @@
-
-body{
-    width: auto;
-}
-.global{
-    display: flex;
-    flex-flow: column;
-    /* background-color: #5d1c34	; */
-    width: 70%;
-    height: auto;
-    border-radius: 20px;
-    justify-self: center;
-}
-
-.global h1{
-    margin-top: 50px;
-    color: #cdbcab;
+/* GERAL */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #f0f0f0;
     font-family: 'Courier New', Courier, monospace;
-    text-align: center;
-}
-
-.formulario{
-    height: auto;
-    margin-top: 20px;
-    background-color: #5d1c34;
-
-    border-radius: 20px;
-    border: #B17871 solid 2px;
-}
-
-.login{
     display: flex;
-    flex-flow: column;
     justify-content: center;
-    margin-top: 30px;
-    padding: 15px;
+    align-items: center;
+    min-height: 100vh;
 }
 
-.login label{
-    color: #cdbcab	;
-    font-size: 20px;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-.login input[type='text'],
-input[type='password'],
-input[type='number'], 
-input[type='date'],
-textarea,
-input[type='decimal']{
-    height: 40px;
-    border-radius: 10px;
-    border: solid 2px #B17871	;
-    background-color: #FFF	;
-    color: rgb(101, 101, 101);
-}
-
-.login input[type='submit']{
-    background-color: #D08A98	;
+/* CONTAINER GLOBAL */
+.global {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    max-width: 800px;
     border-radius: 20px;
-    font-family: 'Courier New', Courier, monospace;
-    color: aliceblue;
+    padding: 30px;
+    background: rgba(28, 28, 28, 0.75);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 2px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 0 20px rgba(0, 255, 153, 0.1);
+}
+
+/* TÍTULO */
+.global h1 {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: #e0d5c8;
+    text-align: center;
+    font-size: 2rem;
+    text-shadow: 1px 1px 4px #000, 0 0 8px #00ff99;
+}
+
+/* FORMULÁRIO */
+.formulario {
+    background-color: rgba(38, 38, 38, 0.8);
+    border-radius: 20px;
+    padding: 30px;
+    border: 1px solid #00ff99;
+}
+
+/* GRUPO DE INPUTS */
+.login {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* LABELS */
+.login label {
+    color: #d1c4b2;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    text-shadow: 0 0 3px #000;
+}
+
+/* INPUTS COM EFEITO GLOW */
+.login input[type='text'],
+.login input[type='password'],
+.login input[type='number'],
+.login input[type='date'],
+.login input[type='decimal'],
+.login textarea {
+    height: 45px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #00ff99;
+    background-color: #f9f9f9;
+    color: #2e2e2e;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.login textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.login input:focus,
+.login textarea:focus {
+    outline: none;
+    border-color: #00ff99;
+    box-shadow: 0 0 10px rgba(0, 255, 153, 0.6);
+}
+
+/* BOTÃO DE ENVIO ESTILIZADO */
+.login input[type='submit'] {
+    background: linear-gradient(145deg, #00ff99, #00de85);
+    color: #fff;
     border: none;
     height: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
 }
 
 .login input[type='submit']:hover {
-    background-color: #B17871;
-    border-radius: 20px;
-    font-family: 'Courier New', Courier, monospace;
-    color: rgb(28, 29, 30);
-    border: none;
-    height: 50px;
-    
-    cursor: pointer; /* SUGESTÃO DE PONTEIRO GUILHERME (PONTEIRO MÃOZINHA) */
+    background: linear-gradient(145deg, #00ff99, #008060);
+    transform: scale(1.05);
+    box-shadow: 0 0 12px rgba(0, 255, 153, 0.6);
 }
 
-
-/* AJUSTAR OS RADIOS BUTTONS JUNTAMENTE COM O LABEL */
-.rbativo{
+/* RADIO BUTTONS */
+.rbativo {
     display: flex;
-    flex-flow: row;
     justify-content: center;
-}
-.rbativo input[type='radio'], label{
-    padding: 5px;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
 }
 
+.rbativo label {
+    padding: 5px 10px;
+    color: #e0d5c8;
+    font-size: 1rem;
+}
 
+.rbativo input[type='radio'] {
+    margin-right: 5px;
+    accent-color: #00ff99;
+}
